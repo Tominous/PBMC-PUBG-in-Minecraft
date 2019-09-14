@@ -408,7 +408,7 @@ public class Main extends JavaPlugin
         int startY = (int)location.getY() - (radius - 1) / 2 * 16;
         for (int y = 0; y < (radius - 1) / 2; ++y) {
             for (int x = 0; x < (radius - 1) / 2; ++x) {
-                Bukkit.getWorld("battlegrounds").getChunkAt(new Location(Bukkit.getWorld("battlegrounds"), (double)startX, 0.0, (double)startY)).load();
+                Bukkit.getWorld(this.worldName).getChunkAt(new Location(Bukkit.getWorld(this.worldName), (double)startX, 0.0, (double)startY)).load();
                 startX += 16;
             }
             startY += 16;
@@ -528,13 +528,13 @@ public class Main extends JavaPlugin
     
     public Connection getMySQLConnection() {
         try {
-            final String host = "127.0.0.1";
-            final String port = "3306";
-            final String database = "s35_pubg";
-            final String username = "s35_EMBTkUw6ZT";
-            final String password = "kagH7uQa21oszKv92CJI";
-            final String url = "jdbc:mysql://127.0.0.1:3306/s35_pubg";
-            return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/s35_pubg", "s35_EMBTkUw6ZT", "kagH7uQa21oszKv92CJI");
+            final String host = "";
+            final String port = "";
+            final String database = "";
+            final String username = "";
+            final String password = "";
+            final String url = "";
+            return DriverManager.getConnection("", "", "");
         }
         catch (SQLException e) {
             e.printStackTrace();
