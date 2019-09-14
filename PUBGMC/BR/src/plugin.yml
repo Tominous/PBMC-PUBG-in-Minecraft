@@ -1,0 +1,5 @@
+name: PBMC
+version: 1.0.0
+main: net.aluix.pubg.Main
+commands:
+    pubg:
